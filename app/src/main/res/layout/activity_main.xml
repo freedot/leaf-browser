@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tiles="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:theme="@style/ThemeOverlay.Leaf.FullscreenContainer"
+    tools:context=".MainActivity"
+    android:id="@+id/fullscreen_content">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/id_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:background="@android:color/white"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!-- opened pages tiles -->
+        <fd.browser.leaf.TilesLayout
+            android:id="@+id/opened_pages"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+
+            tiles:displayCount="1.5"
+            tiles:interval="10dp"
+            tiles:scaleStep="0.22"/>
+
+        <!-- search/url input bar -->
+
+        <!-- desktop/bookmark -->
+
+        <!-- other bar (download，history，setting) -->
+
+    </FrameLayout>
+
+</FrameLayout>
+
+
+
